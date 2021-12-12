@@ -1,0 +1,16 @@
+$font-primary: 'Josefin Sans', sans-serif;
+$font-secondary: 'Oswald', sans-serif;
+
+$color-primary: #b65e23;
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: $font-secondary;
+	font-weight: 200;
+	letter-spacing: 1px;
+}
