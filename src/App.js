@@ -50,7 +50,7 @@ function App() {
 					<Headline>The Story of Absolut Elyx</Headline>
 					<Tagline>Single Estate Copper Crafted Luxury Vodka</Tagline>
 				</Hero>
-				<HeroBanner>
+				<HeroCTAContainer>
 					<HeroCTA>
 						<HeroCTAHline>
 							<span>Discover Elyx</span>
@@ -71,7 +71,7 @@ function App() {
 						</HeroCTAHline>
 						<HeroCTATline>Luxury Worth Celebrating</HeroCTATline>
 					</HeroCTA>
-				</HeroBanner>
+				</HeroCTAContainer>
 			</Background>
 		</div>
 	);
@@ -80,7 +80,7 @@ function App() {
 export default App;
 
 const Background = styled.div`
-	height: 100vh;
+	height: max(100vh, 750px);
 	width: 100vw;
 	position: absolute;
 	top: 0;
@@ -216,7 +216,7 @@ const Hero = styled.div`
 	justify-content: flex-end;
 	height: 40vw;
 	width: 100vw;
-	margin-bottom: 50px;
+	margin-bottom: 40px;
 
 	@media screen and (min-width: 1020px) {
 		height: 400px;
@@ -244,32 +244,42 @@ const Tagline = styled.div`
 	font-weight: 300px;
 	color: white;
 	text-transform: uppercase;
-
 	@media screen and (min-width: 1020px) {
 		font-size: 40px;
 		line-height: 50px;
 	}
 `;
-const HeroBanner = styled.div`
+const HeroCTAContainer = styled.div`
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	height: 40vh;
+	height: 25vh;
 	width: 97vw;
 
+	@media screen and (max-width: 725px) {
+		padding-top: 40vw;
+	}
+	@media screen and (min-width: 726px) {
+		padding-top: 18vw;
+	}
 	@media screen and (min-width: 780px) {
 		flex-direction: row;
 		justify-content: center;
+		align-items: center;
+		padding-top: 10vw;
+	}
+	@media screen and (min-width: 1000px) {
+		padding-top: 0;
 	}
 `;
 const HeroCTA = styled.div`
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
+	justify-content: flex-start;
 	align-items: center;
 	width: 75vw;
-	margin-top: 25px;
+	margin-top: 40px;
 `;
 const HeroCTAHline = styled.div`
 	text-align: center;
@@ -314,11 +324,10 @@ const HeroCTAHline = styled.div`
 	}
 
 	&:hover {
-		transform: scale(1.2);
-
+		transform: scaleY(1.2);
 		span:before,
 		span:after {
-			transform: scaleY(1);
+			transform: scaleY(1.2);
 		}
 	}
 
