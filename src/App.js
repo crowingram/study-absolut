@@ -303,7 +303,7 @@ const HeroCTAHline = styled.div`
 		left: 0;
 		bottom: 0;
 		width: 3px;
-		height: 30px;
+		height: 27px;
 		transform-origin: bottom center;
 		font-size: 40px;
 		transform: scaleY(0);
@@ -317,14 +317,14 @@ const HeroCTAHline = styled.div`
 		right: 0;
 		bottom: 0;
 		width: 3px;
-		height: 30px;
+		height: 27px;
 		transform-origin: bottom center;
 		transform: scaleY(0);
 		transition: all 250ms cubic-bezier(0.25, 0.46, 0.45, 0.94) 0s;
 	}
 
 	&:hover {
-		transform: scaleY(1.2);
+		transform: scale(1.2);
 		span:before,
 		span:after {
 			transform: scaleY(1.2);
