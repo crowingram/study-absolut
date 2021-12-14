@@ -447,7 +447,7 @@ const HeroCTAHline = styled.header`
 		font-size: 3.2vw;
 	}
 	@media screen and (min-width: 1020px) {
-		font-size: 28px;
+		font-size: 2.8vw;
 	}
 `;
 const HeroCTATline = styled.p`
@@ -464,6 +464,6 @@ const HeroCTATline = styled.p`
 		font-size: 1.8vw;
 	}
 	@media screen and (min-width: 1020px) {
-		font-size: 18px;
+		font-size: 1.6vw;
 	}
 `;
