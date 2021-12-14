@@ -117,26 +117,30 @@ function App() {
 					<Tagline>Single Estate Copper Crafted Luxury Vodka</Tagline>
 				</Hero>
 				<HeroCTAContainer>
-					<HeroCTA>
-						<HeroCTAHline>
-							<span>Discover Elyx</span>
-						</HeroCTAHline>
-						<HeroCTATline>
-							Learn how we make our genuine luxury vodka
-						</HeroCTATline>
-					</HeroCTA>
-					<HeroCTA>
-						<HeroCTAHline>
-							<span>World of Elyx</span>
-						</HeroCTAHline>
-						<HeroCTATline>Experience Elyx and Copper</HeroCTATline>
-					</HeroCTA>
-					<HeroCTA>
-						<HeroCTAHline>
-							<span>The Art of Hospitality</span>
-						</HeroCTAHline>
-						<HeroCTATline>Luxury Worth Celebrating</HeroCTATline>
-					</HeroCTA>
+					<div>
+						<HeroCTA>
+							<HeroCTAHline>
+								<span>Discover Elyx</span>
+							</HeroCTAHline>
+							<HeroCTATline>
+								Learn how we make our genuine luxury vodka
+							</HeroCTATline>
+						</HeroCTA>
+					</div>
+					<div>
+						<HeroCTA>
+							<HeroCTAHline>
+								<span>World of Elyx</span>
+							</HeroCTAHline>
+							<HeroCTATline>Experience Elyx and Copper</HeroCTATline>
+						</HeroCTA>
+					</div>
+					<div>
+						<HeroCTA>
+							<HeroCTAHline>The Art of Hospitality</HeroCTAHline>
+							<HeroCTATline>Luxury Worth Celebrating</HeroCTATline>
+						</HeroCTA>
+					</div>
 				</HeroCTAContainer>
 			</Background>
 		</div>
@@ -209,6 +213,7 @@ const LeftLogoNarrow = styled.div`
 `;
 const LeftLogoWide = styled.div`
 	display: none;
+
 	@media screen and (min-width: 1030px) {
 		display: block;
 		margin: 8px 25px;
@@ -304,6 +309,10 @@ const Hero = styled.section`
 	width: 100vw;
 	margin-bottom: 40px;
 
+	@media screen and (max-width: 735px) {
+		height: 50vw;
+	}
+
 	@media screen and (min-width: 1020px) {
 		height: 400px;
 	}
@@ -317,6 +326,7 @@ const Headline = styled.header`
 	margin-right: 75px;
 	color: white;
 	text-transform: uppercase;
+	width: calc(100vw - 150px);
 
 	@media screen and (min-width: 1020px) {
 		font-size: 100px;
@@ -343,6 +353,10 @@ const HeroCTAContainer = styled.section`
 	height: 25vh;
 	width: 97vw;
 
+	div {
+		margin: 10px auto;
+	}
+
 	@media screen and (max-width: 725px) {
 		padding-top: 40vw;
 	}
@@ -365,7 +379,8 @@ const HeroCTA = styled.div`
 	justify-content: flex-start;
 	align-items: center;
 	width: 75vw;
-	margin-top: 40px;
+	height: fit-content;
+	margin-top: 4vh;
 `;
 const HeroCTAHline = styled.header`
 	text-align: center;
@@ -377,6 +392,7 @@ const HeroCTAHline = styled.header`
 	padding: 0 20px;
 	transform-origin: bottom center;
 	transition: all 250ms cubic-bezier(0.25, 0.46, 0.45, 0.94) 0s;
+	width: fit-content;
 
 	span {
 		cursor: pointer;
