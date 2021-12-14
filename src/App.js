@@ -137,7 +137,9 @@ function App() {
 					</div>
 					<div>
 						<HeroCTA>
-							<HeroCTAHline>The Art of Hospitality</HeroCTAHline>
+							<HeroCTAHline>
+								<span>The Art of Hospitality</span>
+							</HeroCTAHline>
 							<HeroCTATline>Luxury Worth Celebrating</HeroCTATline>
 						</HeroCTA>
 					</div>
@@ -383,7 +385,6 @@ const HeroCTA = styled.div`
 	flex-direction: column;
 	justify-content: flex-start;
 	align-items: center;
-	/* width: 28vw; */
 	height: fit-content;
 	margin-top: 4vh;
 `;
@@ -439,7 +440,7 @@ const HeroCTAHline = styled.header`
 	}
 
 	@media screen and (min-width: 700px) {
-		font-size: 3.8vw;
+		font-size: 3.2vw;
 	}
 	@media screen and (min-width: 1020px) {
 		font-size: 28px;
@@ -456,7 +457,7 @@ const HeroCTATline = styled.p`
 	margin: 5px 40px auto;
 
 	@media screen and (min-width: 700px) {
-		font-size: 2.5vw;
+		font-size: 1.8vw;
 	}
 	@media screen and (min-width: 1020px) {
 		font-size: 18px;
