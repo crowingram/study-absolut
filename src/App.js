@@ -202,6 +202,10 @@ const LeftMenu = styled.section`
 `;
 const LeftLogoNarrow = styled.div`
 	display: none;
+
+	img {
+		width: 241px;
+	}
 	@media screen and (min-width: 770px) {
 		display: block;
 		margin: 8px 25px;
@@ -213,6 +217,10 @@ const LeftLogoNarrow = styled.div`
 `;
 const LeftLogoWide = styled.div`
 	display: none;
+
+	img {
+		width: 241px;
+	}
 
 	@media screen and (min-width: 1030px) {
 		display: block;
@@ -239,7 +247,7 @@ const LeftMenuWide = styled.nav`
 			color: #b65e23;
 
 			&:first-of-type {
-				margin-left: 20px;
+				margin-left: 40px;
 			}
 		}
 	}
@@ -351,11 +359,7 @@ const HeroCTAContainer = styled.section`
 	justify-content: center;
 	align-items: center;
 	height: 25vh;
-	width: 97vw;
-
-	div {
-		margin: 10px auto;
-	}
+	width: 100vw;
 
 	@media screen and (max-width: 725px) {
 		padding-top: 40vw;
@@ -367,6 +371,7 @@ const HeroCTAContainer = styled.section`
 		flex-direction: row;
 		justify-content: center;
 		align-items: center;
+		width: 97vw;
 		padding-top: 10vw;
 	}
 	@media screen and (min-width: 1000px) {
@@ -378,7 +383,7 @@ const HeroCTA = styled.div`
 	flex-direction: column;
 	justify-content: flex-start;
 	align-items: center;
-	width: 75vw;
+	/* width: 28vw; */
 	height: fit-content;
 	margin-top: 4vh;
 `;
