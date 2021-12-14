@@ -365,10 +365,6 @@ const HeroCTAContainer = styled.section`
 
 	@media screen and (max-width: 725px) {
 		padding-top: 40vw;
-
-		&:nth-child(2) {
-			background-color: rgba(0, 0, 255, 0.4);
-		}
 	}
 	@media screen and (min-width: 726px) {
 		padding-top: 18vw;
