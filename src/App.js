@@ -34,7 +34,7 @@ function App() {
 								Finest Craft
 								<ul>
 									<li>Distillation</li>
-									<li>Productionm</li>
+									<li>Production</li>
 								</ul>
 							</li>
 						</ul>
@@ -451,7 +451,7 @@ const HeroCTATline = styled.p`
 	text-transform: uppercase;
 	font-family: Montserrat, sans-serif;
 	font-size: 4vw;
-	line-height: 4vwpx;
+	line-height: 4vw;
 	font-weight: 200;
 	color: white;
 	margin: 5px 40px auto;
