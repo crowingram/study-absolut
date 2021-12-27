@@ -1,10 +1,10 @@
 import React from 'react';
 import styled from 'styled-components';
-import { BiSearch, BiMenu } from 'react-icons/bi';
 
 import Logo from './components/Logo';
 import LeftMenu from './components/LeftMenu';
 import LeftMenuWide from './components/LeftMenuWide';
+import RightMenu from './components/RightMenu';
 
 function App() {
 	return (
@@ -80,14 +80,7 @@ function App() {
 					<LeftMenu />
 					<Logo />
 					<LeftMenuWide />
-					<RightMenu>
-						<Search>
-							<BiSearch />
-						</Search>
-						<Menu>
-							<BiMenu />
-						</Menu>
-					</RightMenu>
+					<RightMenu></RightMenu>
 				</PrimaryNav>
 				<Hero>
 					<Headline>The Story of Absolut Elyx</Headline>
@@ -165,26 +158,6 @@ const PrimaryNav = styled.nav`
 		color: white;
 	}
 `;
-const RightMenu = styled.section`
-	display: flex;
-	align-items: center;
-	padding: 10px 25px;
-	width: 100px;
-
-	@media screen and (min-width: 770px) {
-		flex-direction: column;
-		width: 30px;
-		margin: 25px 25px;
-		padding: 0;
-	}
-
-	@media screen and (min-width: 965px) {
-		flex-direction: row;
-		width: 100px;
-		padding: 10px 25px;
-		margin: 0;
-	}
-`;
 const RightMenuLinks = styled.nav`
 	display: none;
 	background-color: white;
@@ -205,14 +178,7 @@ const RightMenuLinks = styled.nav`
 		list-type: none;
 	}
 `;
-const Search = styled.div`
-	font-size: 20px;
-	cursor: pointer;
-`;
-const Menu = styled.div`
-	font-size: 36px;
-	cursor: pointer;
-`;
+
 const Hero = styled.section`
 	display: flex;
 	flex-direction: column;
