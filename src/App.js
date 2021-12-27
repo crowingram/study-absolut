@@ -3,6 +3,7 @@ import styled from 'styled-components';
 
 import RightMenuLinks from './components/RightMenuLinks';
 import PrimaryNav from './components/PrimaryNav';
+import Hero from './components/Hero';
 
 function App() {
 	return (
@@ -10,10 +11,10 @@ function App() {
 			<RightMenuLinks />
 			<Background>
 				<PrimaryNav />
-				<Hero>
-					<Headline>The Story of Absolut Elyx</Headline>
-					<Tagline>Single Estate Copper Crafted Luxury Vodka</Tagline>
-				</Hero>
+				<Hero
+					headline="The Story of Absolut&nbsp;Elyx"
+					tagline="Single Estate Copper Crafted Luxury&nbsp;Vodka"
+				/>
 				<HeroCTAContainer>
 					<div>
 						<HeroCTA>
@@ -63,59 +64,6 @@ const Background = styled.div`
 	background-image: url('./images/background-baratwindow.jpg');
 	background-color: gray;
 	background-blend-mode: multiply;
-`;
-
-const Hero = styled.section`
-	display: flex;
-	flex-direction: column;
-	justify-content: flex-end;
-	height: 40vw;
-	width: 100vw;
-	margin-bottom: 40px;
-
-	@media screen and (max-width: 735px) {
-		height: 45vw;
-	}
-
-	@media screen and (min-width: 1020px) {
-		height: 400px;
-	}
-`;
-const Headline = styled.header`
-	text-align: center;
-	font-size: 8vw;
-	line-height: 10vw;
-	font-weight: 700;
-	margin-left: 65px;
-	margin-right: 65px;
-	color: white;
-	text-transform: uppercase;
-	width: calc(100vw - 150px);
-
-	@media screen and (min-width 310px) {
-		font-size: 10vw;
-	}
-
-	@media screen and (min-width: 1020px) {
-		font-size: 100px;
-		line-height: 100px;
-	}
-`;
-const Tagline = styled.p`
-	text-align: center;
-	font-size: 5vw;
-	line-height: 6.5vw;
-	font-weight: 300px;
-	color: white;
-	text-transform: uppercase;
-
-	@media screen and (min-width 310px) {
-		font-size: 5.75vw;
-	}
-	@media screen and (min-width: 1020px) {
-		font-size: 40px;
-		line-height: 50px;
-	}
 `;
 const HeroCTAContainer = styled.section`
 	display: flex;

@@ -1,0 +1,54 @@
+section#hero {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	height: 40vw;
+	width: 100vw;
+	margin-bottom: 40px;
+
+	@media screen and (max-width: 735px) {
+		height: 45vw;
+	}
+
+	@media screen and (min-width: 1020px) {
+		height: 400px;
+	}
+}
+
+header#headline {
+	text-align: center;
+	font-size: 8vw;
+	line-height: 10vw;
+	font-weight: 700;
+	margin-left: 65px;
+	margin-right: 65px;
+	color: white;
+	text-transform: uppercase;
+	width: calc(100vw - 150px);
+
+	@media screen and (min-width: 310px) {
+		font-size: 10vw;
+	}
+
+	@media screen and (min-width: 1020px) {
+		font-size: 100px;
+		line-height: 100px;
+	}
+}
+
+p#tagline {
+	text-align: center;
+	font-size: 5vw;
+	line-height: 6.5vw;
+	font-weight: 300px;
+	color: white;
+	text-transform: uppercase;
+
+	@media screen and (min-width: 310px) {
+		font-size: 5.75vw;
+	}
+	@media screen and (min-width: 1020px) {
+		font-size: 40px;
+		line-height: 50px;
+	}
+}

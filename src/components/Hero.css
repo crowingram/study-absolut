@@ -1,0 +1,75 @@
+section#hero {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  height: 40vw;
+  width: 100vw;
+  margin-bottom: 40px;
+}
+
+@media screen and (max-width: 735px) {
+  section#hero {
+    height: 45vw;
+  }
+}
+
+@media screen and (min-width: 1020px) {
+  section#hero {
+    height: 400px;
+  }
+}
+
+header#headline {
+  text-align: center;
+  font-size: 8vw;
+  line-height: 10vw;
+  font-weight: 700;
+  margin-left: 65px;
+  margin-right: 65px;
+  color: white;
+  text-transform: uppercase;
+  width: calc(100vw - 150px);
+}
+
+@media screen and (min-width: 310px) {
+  header#headline {
+    font-size: 10vw;
+  }
+}
+
+@media screen and (min-width: 1020px) {
+  header#headline {
+    font-size: 100px;
+    line-height: 100px;
+  }
+}
+
+p#tagline {
+  text-align: center;
+  font-size: 5vw;
+  line-height: 6.5vw;
+  font-weight: 300px;
+  color: white;
+  text-transform: uppercase;
+}
+
+@media screen and (min-width: 310px) {
+  p#tagline {
+    font-size: 5.75vw;
+  }
+}
+
+@media screen and (min-width: 1020px) {
+  p#tagline {
+    font-size: 40px;
+    line-height: 50px;
+  }
+}
+/*# sourceMappingURL=Hero.css.map */
