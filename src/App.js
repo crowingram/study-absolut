@@ -1,10 +1,10 @@
 import React from 'react';
 import styled from 'styled-components';
 import { BiSearch, BiMenu } from 'react-icons/bi';
-import { FaShoppingCart } from 'react-icons/fa';
-import { MdKeyboardArrowDown } from 'react-icons/md';
 
 import Logo from './components/Logo';
+import LeftMenu from './components/LeftMenu';
+import LeftMenuWide from './components/LeftMenuWide';
 
 function App() {
 	return (
@@ -77,18 +77,9 @@ function App() {
 			</RightMenuLinks>
 			<Background>
 				<PrimaryNav>
-					<LeftMenu>
-						<FaShoppingCart />
-						<MdKeyboardArrowDown />
-					</LeftMenu>
+					<LeftMenu />
 					<Logo />
-					<LeftMenuWide>
-						<a href="/">Find Elyx</a>
-						<a href="/">Buy Elyx</a>
-						<a href="/">Absolut Elyx Boutique</a>
-						<a href="/">Cocktails</a>
-						<a href="/">Discover Elyx</a>
-					</LeftMenuWide>
+					<LeftMenuWide />
 					<RightMenu>
 						<Search>
 							<BiSearch />
@@ -172,49 +163,6 @@ const PrimaryNav = styled.nav`
 	@media screen and (min-width: 1030px) {
 		background-color: transparent;
 		color: white;
-	}
-`;
-const LeftMenu = styled.section`
-	display: flex;
-	align-items: center;
-	padding: 10px 25px;
-	font-size: 18px;
-	@media screen and (min-width: 770px) {
-		display: none;
-	}
-`;
-const LeftMenuWide = styled.nav`
-	display: flex;
-	align-items: center;
-	margin: 10px 8px;
-	position: absolute;
-	top: 60px;
-	font-size: 18px;
-
-	a {
-		display: none;
-	}
-	@media screen and (min-width: 770px) {
-		a {
-			display: flex;
-			margin-left: 30px;
-			text-decoration: none;
-			text-transform: uppercase;
-			color: #b65e23;
-
-			&:first-of-type {
-				margin-left: 40px;
-			}
-		}
-	}
-	@media screen and (min-width: 985px) {
-		top: 10px;
-		left: 235px;
-	}
-	@media screen and (min-width: 1030px) {
-		a {
-			color: white;
-		}
 	}
 `;
 const RightMenu = styled.section`

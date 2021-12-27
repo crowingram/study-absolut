@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,OAAO,CAAC;EACP,OAAO,EAAE,IAAI;EACb,WAAW,EAAE,MAAM;EACnB,OAAO,EAAE,SAAS;EAClB,SAAS,EAAE,IAAI;CAKf;;AAHA,MAAM,CAAC,MAAM,MAAM,SAAS,EAAE,KAAK;EANpC,AAAA,OAAO,CAAC;IAON,OAAO,EAAE,IAAI;GAEd",
+    "sources": [
+        "LeftMenu.scss"
+    ],
+    "names": [],
+    "file": "LeftMenu.css"
+}

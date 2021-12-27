@@ -1,0 +1,45 @@
+nav#leftmenuwide {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 10px 8px;
+  position: absolute;
+  top: 60px;
+  font-size: 18px;
+}
+
+nav#leftmenuwide a {
+  display: none;
+}
+
+@media screen and (min-width: 770px) {
+  nav#leftmenuwide a {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-left: 30px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #b65e23;
+  }
+  nav#leftmenuwide a:first-of-type {
+    margin-left: 20px;
+  }
+}
+
+@media screen and (min-width: 985px) {
+  nav#leftmenuwide {
+    top: 10px;
+    left: 235px;
+  }
+}
+
+@media screen and (min-width: 1030px) {
+  nav#leftmenuwide a {
+    color: white;
+  }
+}
+/*# sourceMappingURL=LeftMenuWide.css.map */

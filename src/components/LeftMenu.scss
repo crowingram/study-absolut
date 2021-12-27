@@ -1,0 +1,10 @@
+section {
+	display: flex;
+	align-items: center;
+	padding: 10px 25px;
+	font-size: 18px;
+
+	@media screen and (min-width: 770px) {
+		display: none;
+	}
+}
