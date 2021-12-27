@@ -1,0 +1,41 @@
+#center-logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#left-logo-narrow {
+  display: none;
+}
+
+#left-logo-wide {
+  display: none;
+}
+
+@media screen and (min-width: 770px) {
+  #center-logo {
+    display: none;
+  }
+  #left-logo-narrow {
+    display: block;
+    margin: 8px 25px;
+  }
+}
+
+@media screen and (min-width: 1030px) {
+  #left-logo-narrow {
+    display: none;
+    margin: 0;
+  }
+  #left-logo-wide {
+    display: block;
+    margin: 8px 25px;
+  }
+}
+/*# sourceMappingURL=Logo.css.map */

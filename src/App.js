@@ -3,7 +3,8 @@ import styled from 'styled-components';
 import { BiSearch, BiMenu } from 'react-icons/bi';
 import { FaShoppingCart } from 'react-icons/fa';
 import { MdKeyboardArrowDown } from 'react-icons/md';
-import './App.css';
+
+import Logo from './components/Logo';
 
 function App() {
 	return (
@@ -80,22 +81,7 @@ function App() {
 						<FaShoppingCart />
 						<MdKeyboardArrowDown />
 					</LeftMenu>
-					<LeftLogoNarrow>
-						<img
-							src="./images/logo-elyx-copper-bar.png"
-							width="215"
-							height="55"
-							alt=""
-						/>
-					</LeftLogoNarrow>
-					<LeftLogoWide>
-						<img
-							src="./images/logo-elyx-white.png"
-							width="215"
-							height="55"
-							alt=""
-						/>
-					</LeftLogoWide>
+					<Logo />
 					<LeftMenuWide>
 						<a href="/">Find Elyx</a>
 						<a href="/">Buy Elyx</a>
@@ -174,10 +160,6 @@ const PrimaryNav = styled.nav`
 	color: #b65e23;
 	background-color: white;
 	height: 57px;
-	background-image: url('./images/logo-elyx-copper.png');
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: 200px 28px;
 	@media screen and (min-width: 770px) {
 		background-image: none;
 		flex-wrap: wrap;
@@ -196,37 +178,9 @@ const LeftMenu = styled.section`
 	display: flex;
 	align-items: center;
 	padding: 10px 25px;
-	width: 85vw;
 	font-size: 18px;
 	@media screen and (min-width: 770px) {
 		display: none;
-	}
-`;
-const LeftLogoNarrow = styled.div`
-	display: none;
-
-	img {
-		width: 241px;
-	}
-	@media screen and (min-width: 770px) {
-		display: block;
-		margin: 8px 25px;
-	}
-	@media screen and (min-width: 1030px) {
-		display: none;
-		margin: 0;
-	}
-`;
-const LeftLogoWide = styled.div`
-	display: none;
-
-	img {
-		width: 241px;
-	}
-
-	@media screen and (min-width: 1030px) {
-		display: block;
-		margin: 8px 25px;
 	}
 `;
 const LeftMenuWide = styled.nav`
