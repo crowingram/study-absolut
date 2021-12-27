@@ -1,14 +1,12 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import RightMenuLinks from './components/RightMenuLinks';
 import PrimaryNav from './components/PrimaryNav';
 import Hero from './components/Hero';
 
 function App() {
 	return (
 		<div className="App">
-			<RightMenuLinks />
 			<Background>
 				<PrimaryNav />
 				<Hero
@@ -16,6 +14,7 @@ function App() {
 					tagline="Single Estate Copper Crafted Luxury&nbsp;Vodka"
 				/>
 				<HeroCTAContainer>
+					gity
 					<div>
 						<HeroCTA>
 							<HeroCTAHline>
