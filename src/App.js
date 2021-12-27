@@ -3,6 +3,7 @@ import styled from 'styled-components';
 
 import PrimaryNav from './components/PrimaryNav';
 import Hero from './components/Hero';
+import HeroCTA from './components/HeroCTA';
 
 function App() {
 	return (
@@ -14,33 +15,18 @@ function App() {
 					tagline="Single Estate Copper Crafted Luxury&nbsp;Vodka"
 				/>
 				<HeroCTAContainer>
-					gity
-					<div>
-						<HeroCTA>
-							<HeroCTAHline>
-								<span>Discover Elyx</span>
-							</HeroCTAHline>
-							<HeroCTATline>
-								Learn how we make our genuine luxury vodka
-							</HeroCTATline>
-						</HeroCTA>
-					</div>
-					<div>
-						<HeroCTA>
-							<HeroCTAHline>
-								<span>World of Elyx</span>
-							</HeroCTAHline>
-							<HeroCTATline>Experience Elyx and Copper</HeroCTATline>
-						</HeroCTA>
-					</div>
-					<div>
-						<HeroCTA>
-							<HeroCTAHline>
-								<span>The Art of Hospitality</span>
-							</HeroCTAHline>
-							<HeroCTATline>Luxury Worth Celebrating</HeroCTATline>
-						</HeroCTA>
-					</div>
+					<HeroCTA
+						headline="Discover Elyx"
+						tagline="Learn how we make our genuine luxury vodka"
+					></HeroCTA>
+					<HeroCTA
+						headline="World of Elyx"
+						tagline="Experience Elyx and Copper"
+					></HeroCTA>
+					<HeroCTA
+						headline="The Art of Hospitality"
+						tagline="Luxury Worth Celebrating"
+					></HeroCTA>
 				</HeroCTAContainer>
 			</Background>
 		</div>
@@ -91,99 +77,5 @@ const HeroCTAContainer = styled.section`
 	}
 	@media screen and (min-width: 1000px) {
 		padding-top: 0;
-	}
-`;
-const HeroCTA = styled.div`
-	display: flex;
-	flex-direction: column;
-	justify-content: flex-start;
-	align-items: center;
-	height: fit-content;
-	margin-top: 4vh;
-`;
-const HeroCTAHline = styled.header`
-	text-align: center;
-	text-transform: uppercase;
-	color: white;
-	font-size: 4.8vw;
-	border-bottom: 2px solid #b65e23;
-	position: relative;
-	padding: 0 20px;
-	transform-origin: bottom center;
-	transition: all 250ms cubic-bezier(0.25, 0.46, 0.45, 0.94) 0s;
-	width: fit-content;
-
-	span {
-		cursor: pointer;
-	}
-
-	span:before {
-		content: '';
-		background-color: #b65e23;
-		position: absolute;
-		left: 0;
-		bottom: 0;
-		width: 2px;
-		height: 34px;
-		transform-origin: bottom center;
-		/* font-size: 40px; */
-		transform: scaleY(0);
-		transition: all 250ms cubic-bezier(0.25, 0.46, 0.45, 0.94) 0s;
-	}
-
-	span:after {
-		content: '';
-		background-color: #b65e23;
-		position: absolute;
-		right: 0;
-		bottom: 0;
-		width: 2px;
-		height: 34px;
-		transform-origin: bottom center;
-		transform: scaleY(0);
-		transition: all 250ms cubic-bezier(0.25, 0.46, 0.45, 0.94) 0s;
-	}
-
-	&:hover {
-		transform: scale(1.1);
-		span:before,
-		span:after {
-			transform: scaleY(1.1);
-		}
-	}
-
-	@media screen and (min-width: 650px) {
-		font-size: 3.2vw;
-	}
-	@media screen and (min-width: 775px) {
-		font-size: 3vw;
-	}
-	@media screen and (min-width: 950px) {
-		font-size: 2.6vw;
-	}
-	@media screen and (min-width: 1020px) {
-		font-size: 2.5vw;
-	}
-`;
-const HeroCTATline = styled.p`
-	text-align: center;
-	text-transform: uppercase;
-	font-family: Montserrat, sans-serif;
-	font-size: 4vw;
-	font-weight: 200;
-	color: white;
-	margin: 5px 40px auto;
-
-	@media screen and (min-width: 650px) {
-		font-size: 1.8vw;
-	}
-	@media screen and (min-width: 775px) {
-		font-size: 1.7vw;
-	}
-	@media screen and (min-width: 950px) {
-		font-size: 1.5vw;
-	}
-	@media screen and (min-width: 1020px) {
-		font-size: 1.4vw;
 	}
 `;
