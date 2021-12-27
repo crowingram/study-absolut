@@ -16,7 +16,7 @@ function App() {
 					<LeftMenu />
 					<Logo />
 					<LeftMenuWide />
-					<RightMenu></RightMenu>
+					<RightMenu />
 				</PrimaryNav>
 				<Hero>
 					<Headline>The Story of Absolut Elyx</Headline>
