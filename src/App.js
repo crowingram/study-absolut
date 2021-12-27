@@ -5,76 +5,12 @@ import Logo from './components/Logo';
 import LeftMenu from './components/LeftMenu';
 import LeftMenuWide from './components/LeftMenuWide';
 import RightMenu from './components/RightMenu';
+import RightMenuLinks from './components/RightMenuLinks';
 
 function App() {
 	return (
 		<div className="App">
-			<RightMenuLinks>
-				<ul>
-					<li>Absolut Elyx Vodka</li>
-					<li>
-						Discover Elyx
-						<ul>
-							<li>
-								True Luxury
-								<ul>
-									<li>Single Estate</li>
-									<li>Copper Crafted</li>
-									<li>Luxury Vodka</li>
-								</ul>
-							</li>
-							<li>
-								Finest Ingredients
-								<ul>
-									<li>Wheat</li>
-									<li>Water</li>
-									<li>Water for People</li>
-								</ul>
-							</li>
-							<li>
-								Finest Craft
-								<ul>
-									<li>Distillation</li>
-									<li>Production</li>
-								</ul>
-							</li>
-						</ul>
-					</li>
-					<li>
-						The Art of Hospitality
-						<ul>
-							<li>
-								Elyx Experience
-								<ul>
-									<li>Hospitality Perfected</li>
-									<li>Our Guests</li>
-								</ul>
-							</li>
-							<li>
-								Elyx around the World
-								<ul>
-									<li>Spotlights</li>
-									<li>Proof of Quality</li>
-								</ul>
-							</li>
-						</ul>
-					</li>
-					<li>
-						World of Elyx
-						<ul>
-							<li>Elyx Cocktails</li>
-							<li>The Martini</li>
-							<li>
-								Copper Universe
-								<ul>
-									<li>Absolut Elyx Boutique</li>
-									<li>#CopperMakesItBetter</li>
-								</ul>
-							</li>
-						</ul>
-					</li>
-				</ul>
-			</RightMenuLinks>
+			<RightMenuLinks />
 			<Background>
 				<PrimaryNav>
 					<LeftMenu />
@@ -156,26 +92,6 @@ const PrimaryNav = styled.nav`
 	@media screen and (min-width: 1030px) {
 		background-color: transparent;
 		color: white;
-	}
-`;
-const RightMenuLinks = styled.nav`
-	display: none;
-	background-color: white;
-	text-decoration: none;
-	text-transform: uppercase;
-	color: #b65e23;
-	height: max(100vh, 750px);
-	width: 100vw;
-	position: absolute;
-	top: 0;
-	right: 0;
-	bottom: 0;
-	left: 0;
-
-	z-index: 10;
-
-	ul {
-		list-type: none;
 	}
 `;
 
