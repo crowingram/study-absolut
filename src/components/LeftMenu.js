@@ -8,8 +8,8 @@ import './LeftMenu.css';
 const LeftMenu = () => {
 	return (
 		<section>
-			<FaShoppingCart />
-			<MdKeyboardArrowDown />
+			<FaShoppingCart id="shopping-cart-icon" />
+			<MdKeyboardArrowDown id="arrow-down-icon" />
 		</section>
 	);
 };

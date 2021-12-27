@@ -1,41 +1,44 @@
 #center-logo {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+	display: flex;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	justify-content: center;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	align-items: center;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	cursor: pointer;
 }
 
 #left-logo-narrow {
-  display: none;
+	display: none;
 }
 
 #left-logo-wide {
-  display: none;
+	display: none;
 }
 
 @media screen and (min-width: 770px) {
-  #center-logo {
-    display: none;
-  }
-  #left-logo-narrow {
-    display: block;
-    margin: 8px 25px;
-  }
+	#center-logo {
+		display: none;
+	}
+	#left-logo-narrow {
+		display: block;
+		margin: 8px 25px;
+		cursor: pointer;
+	}
 }
 
 @media screen and (min-width: 1030px) {
-  #left-logo-narrow {
-    display: none;
-    margin: 0;
-  }
-  #left-logo-wide {
-    display: block;
-    margin: 8px 25px;
-  }
+	#left-logo-narrow {
+		display: none;
+		margin: 0;
+	}
+	#left-logo-wide {
+		display: block;
+		margin: 8px 25px;
+		cursor: pointer;
+	}
 }
 /*# sourceMappingURL=Logo.css.map */

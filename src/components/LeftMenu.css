@@ -9,6 +9,11 @@ section {
   font-size: 18px;
 }
 
+section #shopping-cart-icon,
+section #arrow-down-icon {
+  cursor: pointer;
+}
+
 @media screen and (min-width: 770px) {
   section {
     display: none;
