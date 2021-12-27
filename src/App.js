@@ -1,23 +1,15 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import Logo from './components/Logo';
-import LeftMenu from './components/LeftMenu';
-import LeftMenuWide from './components/LeftMenuWide';
-import RightMenu from './components/RightMenu';
 import RightMenuLinks from './components/RightMenuLinks';
+import PrimaryNav from './components/PrimaryNav';
 
 function App() {
 	return (
 		<div className="App">
 			<RightMenuLinks />
 			<Background>
-				<PrimaryNav>
-					<LeftMenu />
-					<Logo />
-					<LeftMenuWide />
-					<RightMenu />
-				</PrimaryNav>
+				<PrimaryNav />
 				<Hero>
 					<Headline>The Story of Absolut Elyx</Headline>
 					<Tagline>Single Estate Copper Crafted Luxury Vodka</Tagline>
@@ -71,28 +63,6 @@ const Background = styled.div`
 	background-image: url('./images/background-baratwindow.jpg');
 	background-color: gray;
 	background-blend-mode: multiply;
-`;
-const PrimaryNav = styled.nav`
-	width: 100vw;
-	display: flex;
-	justify-content: space-between;
-	position: relative;
-	color: #b65e23;
-	background-color: white;
-	height: 57px;
-	@media screen and (min-width: 770px) {
-		background-image: none;
-		flex-wrap: wrap;
-		height: 120px;
-	}
-	@media screen and (min-width: 985px) {
-		flex-wrap: nowrap;
-		height: 70px;
-	}
-	@media screen and (min-width: 1030px) {
-		background-color: transparent;
-		color: white;
-	}
 `;
 
 const Hero = styled.section`

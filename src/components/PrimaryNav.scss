@@ -1,0 +1,22 @@
+div#primary-nav {
+	width: 100vw;
+	display: flex;
+	justify-content: space-between;
+	position: relative;
+	color: #b65e23;
+	background-color: white;
+	height: 57px;
+	@media screen and (min-width: 770px) {
+		background-image: none;
+		flex-wrap: wrap;
+		height: 120px;
+	}
+	@media screen and (min-width: 985px) {
+		flex-wrap: nowrap;
+		height: 70px;
+	}
+	@media screen and (min-width: 1030px) {
+		background-color: transparent;
+		color: white;
+	}
+}

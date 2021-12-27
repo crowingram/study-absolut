@@ -1,0 +1,38 @@
+div#primary-nav {
+  width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: relative;
+  color: #b65e23;
+  background-color: white;
+  height: 57px;
+}
+
+@media screen and (min-width: 770px) {
+  div#primary-nav {
+    background-image: none;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    height: 120px;
+  }
+}
+
+@media screen and (min-width: 985px) {
+  div#primary-nav {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    height: 70px;
+  }
+}
+
+@media screen and (min-width: 1030px) {
+  div#primary-nav {
+    background-color: transparent;
+    color: white;
+  }
+}
+/*# sourceMappingURL=PrimaryNav.css.map */
